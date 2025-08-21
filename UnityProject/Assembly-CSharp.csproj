@@ -71,8 +71,8 @@
     <Compile Include="Assets\ArtisanDream.Tools\Pooling\PoolingBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\StoreUIButtonBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\MonoEventBehaviours.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryUIButtonBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Interfaces\Interfaces.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryUIButtonBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\CharacterPatterns\CharacterMoveAndRotate3d.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Vector3Data\TransformToVector3Behaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\InputSystem\TouchSwipeBehaviour.cs" />
@@ -114,8 +114,8 @@
     <Compile Include="Assets\ArtisanDream.Tools\Color and Material\ColorGenerator.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Movement\BouncyBall.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\Animation\AnimsBehaviour.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Toggling\ToggleEvent.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\ActionsEvents\GameActionAdvanced.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Toggling\ToggleEvent.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\Store.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Triggers\TriggerGameActionBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AiPatrol.cs" />
@@ -171,10 +171,10 @@
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Simple\AgentBehaviourPlus.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryItem.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Matching\SimpleIDBehaviour.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Animation\AnimStatesBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Vector3Data\Vector3DataCollection.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Coroutines\CoroutineBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AiIdle.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Animation\AnimStatesBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\InputSystem\TouchBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\InputSystem\InputPlayer.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AiHunt.cs" />
@@ -182,8 +182,8 @@
     <Compile Include="Assets\ArtisanDream.Tools\Movement\ScalePulser.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\RigidBodiesAndColliders\ColliderBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\DestroyDisable\DestoryOnTrigger.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Color and Material\NewColorGenerator.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\UI\TextBehaviour.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Color and Material\NewColorGenerator.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\UI\SimpleImageBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleBoolData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Triggers\TriggerEvents2DBehaviour.cs" />
@@ -196,8 +196,8 @@
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AiBrain.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AgentPatrolBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Advanced\AiBase.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\MonoEventsBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\Experimental\AnimateCharacter.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\MonoEventsBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\BoolBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Movement\SimpleRotator.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Collection\CollectionUI.cs" />
@@ -211,8 +211,8 @@
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\SimpleCharacterController.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Utilities\SceneManagment\SceneLoader.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Systems\WorkSystem.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleFloatData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Utilities\Instancing\Instancer.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleFloatData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\Experimental\Pickup.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleIntData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\ProgramBehavior.cs" />
