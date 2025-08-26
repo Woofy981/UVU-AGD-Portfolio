@@ -136,6 +136,7 @@
     <Compile Include="Assets\ArtisanDream.Tools\Vector3Data\Vector3DataSystem.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Utilities\Instancing\InstancingBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\FloatData.cs" />
+    <Compile Include="Assets\_External\Mini Simple Characters Skeleton Demo\Readme\Scripts\Readme.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Matching\SimpleIDMatchBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\UI\ImageBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\AI\Scripts\Simple\AgentBehaviour.cs" />
@@ -217,6 +218,9 @@
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleIntData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\ProgramBehavior.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Color and Material\MaterialMatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\_External\Brawl Arena\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

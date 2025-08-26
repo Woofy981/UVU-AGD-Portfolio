@@ -551,6 +551,7 @@
 "Assets/ArtisanDream.Tools/Words/LetterObject.cs"
 "Assets/ArtisanDream.Tools/Words/StringListData.cs"
 "Assets/ArtisanDream.Tools/Words/WordGenerator.cs"
+"Assets/_External/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic
 /optimize+

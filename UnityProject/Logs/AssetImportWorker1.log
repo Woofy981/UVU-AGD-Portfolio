@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/release' branch; Version is '6000.0.43f1 (97272b72f107) revision 9905963'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 32555 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32555 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Users/Owner/Documents/UVU/UVU-AGD-Portfolio/UnityProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63649
+53618
 -job-worker-count
 9
 -background-job-worker-count
@@ -59,12 +59,14 @@ C:/Users/Owner/Documents/UVU/UVU-AGD-Portfolio/UnityProject
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22772]  Target information:
+Player connection [43232]  Target information:
 
-Player connection [22772]  * "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 3447684854 [EditorId] 3447684854 [Version] 1048832 [Id] WindowsEditor(7,PC981) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [43232]  * "[IP] 100.73.198.48 [Port] 0 [Flags] 2 [Guid] 4027294980 [EditorId] 4027294980 [Version] 1048832 [Id] WindowsEditor(7,PC981) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22772] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [22772] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [43232]  * "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 4027294980 [EditorId] 4027294980 [Version] 1048832 [Id] WindowsEditor(7,PC981) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [43232] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [43232] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.43f1 (97272b72f107)
 [Subsystems] Discovering subsystems at path C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/Resources/UnitySubsystems
@@ -92,45 +94,45 @@ Initialize mono
 Mono path[0] = 'C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.0.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003556 seconds.
-- Loaded All Assemblies, in  0.296 seconds
+Registered in 0.002791 seconds.
+- Loaded All Assemblies, in  0.290 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.228 seconds
-Domain Reload Profiling: 522ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  0.225 seconds
+Domain Reload Profiling: 513ms
+	BeginReloadAssembly (97ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (110ms)
-		LoadAssemblies (107ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (94ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (108ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (97ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (105ms)
+				TypeCache.ScanAssembly (96ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (228ms)
+	FinalizeReload (226ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (205ms)
+		SetupLoadedEditorAssemblies (198ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (109ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -139,57 +141,133 @@ Domain Reload Profiling: 522ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.479 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.483 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.378 seconds
-Domain Reload Profiling: 853ms
+- Finished resetting the current domain, in  0.390 seconds
+Domain Reload Profiling: 870ms
 	BeginReloadAssembly (119ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (24ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (298ms)
-		LoadAssemblies (235ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (239ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (136ms)
-			TypeCache.Refresh (108ms)
-				TypeCache.ScanAssembly (99ms)
-			BuildScriptInfoCaches (22ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (98ms)
+			BuildScriptInfoCaches (21ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (378ms)
+	FinalizeReload (390ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (300ms)
+		SetupLoadedEditorAssemblies (310ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (220ms)
-			ProcessInitializeOnLoadMethodAttributes (15ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (226ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3957 unused Assets / (1.1 MB). Loaded Objects now: 4441.
-Memory consumption went from 84.6 MB to 83.5 MB.
-Total: 3.870300 ms (FindLiveObjects: 0.269400 ms CreateObjectMapping: 0.125500 ms MarkObjects: 2.792800 ms  DeleteObjects: 0.681500 ms)
+Unloading 3959 unused Assets / (0.9 MB). Loaded Objects now: 4445.
+Memory consumption went from 85.1 MB to 84.2 MB.
+Total: 4.150500 ms (FindLiveObjects: 0.244400 ms CreateObjectMapping: 0.115400 ms MarkObjects: 3.130100 ms  DeleteObjects: 0.659800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 670422.532361 seconds.
-  path: Assets/Assets
-  artifactKey: Guid(aca1796217b85c04aa56a6c15fbe9cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets using Guid(aca1796217b85c04aa56a6c15fbe9cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9cd277366e15ca0b6aa5a4db1eae4c9') in 0.0040262 seconds
+  Time since last request: 352960.370546 seconds.
+  path: Assets/ArtisanDream.Tools
+  artifactKey: Guid(94a7f954791609641985e00480b0d6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtisanDream.Tools using Guid(94a7f954791609641985e00480b0d6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '103da3cbdf3ec5c234f06d952b31b8a6') in 0.0034465 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Import Request.
+  Time since last request: 196.140926 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/Bone_ChestA.prefab
+  artifactKey: Guid(2a9cd6b33b98548bf8d7d4f94a53e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/Bone_ChestA.prefab using Guid(2a9cd6b33b98548bf8d7d4f94a53e1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ab0f48894d3ccd75645820aa77fd754') in 0.2034869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/Wall_Tile_Block1.prefab
+  artifactKey: Guid(81044204068d943dd8e46160655d2108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/Wall_Tile_Block1.prefab using Guid(81044204068d943dd8e46160655d2108) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4abefc36de93e2aa71272ad2ea0a36ce') in 0.0118851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/Bones_ChestB.prefab
+  artifactKey: Guid(c1c288bb2505b4e2d9e83e36cc85d196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/Bones_ChestB.prefab using Guid(c1c288bb2505b4e2d9e83e36cc85d196) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec136240d7eec4dc72d88323d683359c') in 0.0138056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/RockFlat6.prefab
+  artifactKey: Guid(1ad33190abef140138c036ec06a5abb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/RockFlat6.prefab using Guid(1ad33190abef140138c036ec06a5abb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b582c29a3ccfaf7a4433e5ac2d86c26') in 0.0159869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/RockFlat3.prefab
+  artifactKey: Guid(739781aa3e17e4ac4a0eaa2a5d0d3238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/RockFlat3.prefab using Guid(739781aa3e17e4ac4a0eaa2a5d0d3238) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62b7b21521bd9298a2f4c583afcaab8a') in 0.0139998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/Grass_Tile_Night.prefab
+  artifactKey: Guid(51510de34f82041149d25090ec962e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/Grass_Tile_Night.prefab using Guid(51510de34f82041149d25090ec962e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '650cea1ab7fafe129814d6b8e995e3d8') in 0.0153667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_External/Brawl Arena/Prefabs/RockFlat5.prefab
+  artifactKey: Guid(def5750a5ceb84845a9ee9beda9425e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Prefabs/RockFlat5.prefab using Guid(def5750a5ceb84845a9ee9beda9425e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3639539be495fd6b35d203b5d3eed01f') in 0.0244721 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.344188 seconds.
+  path: Assets/_External/Brawl Arena/Models/Chest.fbx
+  artifactKey: Guid(4643c2b3b89cb4f5d8d5e78a7aefcfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Models/Chest.fbx using Guid(4643c2b3b89cb4f5d8d5e78a7aefcfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4632424cb7496ceef0f46d4664969007') in 0.0949568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_External/Brawl Arena/Models/Wall_Tile_Block1.fbx
+  artifactKey: Guid(ad82c5049c72343dc8ea8683c18b8df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Brawl Arena/Models/Wall_Tile_Block1.fbx using Guid(ad82c5049c72343dc8ea8683c18b8df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6e34295b80b428bdc981cce3301c0f4') in 0.0236741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
