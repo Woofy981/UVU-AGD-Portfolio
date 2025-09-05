@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Game/Scenes/ArenaTest.unity
+- path: Assets/_Game/Scenes/UI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
