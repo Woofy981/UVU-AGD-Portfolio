@@ -1,24 +1,20 @@
-polySphere;
-select -r pSphere1;
-move -r 0 0.963223 0;
-polySphere;
-select -r pSphere2;
-scale -r 0.7 0.7 0.7;
-move -r 0 2.3 0;
-polySphere;
-select -r pSphere3;
-scale -r 0.5 0.5 0.5;
-move -r 0 3.224539 0;
-polySphere;
-select -r pSphere4;
-scale -r 0.1 0.1 0.1;
-move -r -0.207605 3.322864 0.3849965;
-polySphere;
-select -r pSphere5;
-scale -r 0.1 0.1 0.1;
-move -r 0.207323 3.322864 0.3849965;
-polyCone;
-select -r pCone1;
-rotate -r -os -fo 90 0 0;
-scale -r 0.1 0.2 0.1;
-move -r 0 3.19601 0.6435396;
+float $sizeBase = 3, $mid = $sizeBase - 0.75, $sml = $sizeBase - 1.5, $face = $sizeBase - 2.75;
+
+polySphere -r $sizeBase -sx 20 -sy 20 -ax 0 1 0 -cuv 0 -ch 1;
+move -y $sizeBase;
+
+polySphere -r ($mid) -sx 20 -sy 20 -ax 0 1 0 -cuv 0 -ch 1;
+move -y (($sizeBase * 2) + ($mid - ($mid / 2)));
+
+polySphere -r ($sml) -sx 20 -sy 20 -ax 0 1 0 -cuv 0 -ch 1;
+move -y (($sizeBase * 3) + ($sml - ($sml / 4)));
+
+polySphere -r ($face) -sx 20 -sy 20 -ax 0 1 0 -cuv 0 -ch 1;
+move -r (-($sml / 2.75)) (($sizeBase * 3) + ($sml)) ($sml / 1.2);
+
+polySphere -r ($face) -sx 20 -sy 20 -ax 0 1 0 -cuv 0 -ch 1;
+move -r ($sml / 2.75) (($sizeBase * 3) + ($sml)) ($sml / 1.2);
+
+polyCone -r $face -h ($face + ($face * 2.5)) -sx 20 -sy 1 -sz 0 -ax 0 1 0 -rcp 0 -cuv 0 -ch 1;
+move -r 0 (($sizeBase * 3) + ($sml / 1.3)) ($sml * 1.25);
+rotate -r -os -fo 90 0 0 ;
