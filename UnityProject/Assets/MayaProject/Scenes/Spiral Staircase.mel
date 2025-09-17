@@ -1,0 +1,13 @@
+proc BuildStaircase(int $steps, int $length, int $width, float $Height, int $Rotation, float $stepH, int $stepRot){
+   
+    for($i=0; $i<$steps; $i++){
+        polyCube -w $width -h $Height -d $length;
+        rotate 0 ($i * ($stepRot / $steps)) $Rotation;
+        move -os 0 ($i * $stepH) ($length / 2);
+    }
+
+    polyCylinder -r $width -h ($stepH * $steps);
+    move 0 (($stepH * $steps) / 2) 0;
+}
+
+BuildStaircase(100, 8, 2, 0.5, 1, 1, 720);
