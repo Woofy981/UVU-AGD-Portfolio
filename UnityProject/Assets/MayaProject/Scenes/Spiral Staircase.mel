@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 proc BuildStaircase(int $steps, int $length, int $width, float $Height, float $Offset, float $stepH, float $stepRot){
    
@@ -11,4 +12,19 @@ proc BuildStaircase(int $steps, int $length, int $width, float $Height, float $O
     move 0 (($stepH * $steps) / 2) 0;
 }
 
+=======
+
+proc BuildStaircase(int $steps, int $length, int $width, float $Height, float $Offset, float $stepH, float $stepRot){
+   
+    for($i=0; $i<$steps; $i++){
+        polyCube -w $width -h $Height -d $length;
+        rotate 0 ($i * ($stepRot / $steps)) 0;
+        move -os 0 ($i * $stepH) (($length / 2) + $Offset);
+    }
+
+    polyCylinder -r $width -h ($stepH * $steps);
+    move 0 (($stepH * $steps) / 2) 0;
+}
+
+>>>>>>> origin/main
 BuildStaircase(50, 8, 2, 0.5, 0.5, 1, 720);
