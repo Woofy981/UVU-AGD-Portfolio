@@ -1,0 +1,182 @@
+proc string Median(string $input[]) {
+    int $size = size($input);
+    if ($size == 0) return "NaN";
+
+    string $Num[];
+    float $val;
+    int $i;
+    for ($i = 0; $i < $size; $i++) {
+        $val = float($input[$i]);
+        $Num[$i] = `format "%.8f" $val`;
+    }
+
+    $Num = `sort $Num`;
+
+    float $median;
+    if ($size % 2 == 0) {
+        float $a = float($Num[($size/2)-1]);
+        float $b = float($Num[$size/2]);
+        $median = ($a + $b)/2.0;
+    } else {
+        $median = float($Num[int($size/2)]);
+    }
+
+    return string($median);
+}
+
+
+proc string Mean(string $input[]) {
+    float $sum = 0.0;
+    int $i;
+
+    for ($i = 0; $i < size($input); $i++) {
+        float $num = float($input[$i]);
+        $sum += $num;
+    }
+
+    float $mean = $sum / size($input);
+    return (string($mean));
+}
+
+
+proc string Power(string $input[]) {
+    float $result = float($input[0]);
+    int $i;
+
+    for ($i = 1; $i < size($input); $i++) {
+        float $next = float($input[$i]);
+        $result = `pow $result $next`;
+    }
+
+    return (string($result));
+}
+
+
+proc string Multi(string $input[]) {
+    float $result = float($input[0]);
+    int $i;
+
+    for ($i = 1; $i < size($input); $i++) {
+        float $num = float($input[$i]);
+        $result *= $num;
+    }
+
+    return (string($result));
+}
+
+
+proc string Div(string $input[]) {
+    float $result = float($input[0]);
+    int $i;
+
+    for ($i = 1; $i < size($input); $i++) {
+        float $num = float($input[$i]);
+        if ($num != 0) {
+            $result /= $num;
+        } else {
+            return "Error: Division by zero.";
+        }
+    }
+
+    return (string($result));
+}
+
+
+proc string Sub(string $input[]) {
+    float $result = float($input[0]);
+    int $i;
+
+    for ($i = 1; $i < size($input); $i++) {
+        float $num = float($input[$i]);
+        $result -= $num;
+    }
+
+    return (string($result));
+}
+
+
+proc string Add(string $input[]) {
+    float $result = 0.0;
+    int $i;
+
+    for ($i = 0; $i < size($input); $i++) {
+        float $num = float($input[$i]);
+        $result += $num;
+    }
+
+    return (string($result));
+}
+
+
+proc Calculator() {
+    string $Nums[];
+    string $userInput;
+    string $NumInput;
+    string $button;
+
+    $button = `promptDialog
+        -title "Calculator"
+        -message "Enter operation (Add, Sub, Div, Multi, Power, Mean, Median):"
+        -text ""  
+        -button "OK" -defaultButton "OK" -cancelButton "Cancel"
+        -dismissString "Cancel"`;
+
+    if ($button == "OK") {
+        $userInput = `promptDialog -query -text`;
+    } else {
+        print("Cancelled operation input.\n");
+        return;
+    }
+
+    $button = `promptDialog
+        -title "Number Input"
+        -message "Enter numbers separated by spaces:"
+        -text "" 
+        -button "OK" -defaultButton "OK" -cancelButton "Cancel"
+        -dismissString "Cancel"`;
+
+    if ($button == "OK") {
+        $NumInput = `promptDialog -query -text`;
+    } else {
+        print("Cancelled number input.\n");
+        return;
+    }
+
+    $Nums = stringToStringArray($NumInput, " ");
+
+    string $result;
+    if ($userInput == "Add") {
+        $result = Add($Nums);
+        print("Sum: " + $result + "\n");
+    } 
+    else if ($userInput == "Sub") {
+        $result = Sub($Nums);
+        print("Difference: " + $result + "\n");
+    } 
+    else if ($userInput == "Div") {
+        $result = Div($Nums);
+        print("Quotient: " + $result + "\n");
+    } 
+    else if ($userInput == "Multi") {
+        $result = Multi($Nums);
+        print("Product: " + $result + "\n");
+    } 
+    else if ($userInput == "Power") {
+        $result = Power($Nums);
+        print("Power: " + $result + "\n");
+    } 
+    else if ($userInput == "Mean") {
+        $result = Mean($Nums);
+        print("Mean: " + $result + "\n");
+    } 
+    else if ($userInput == "Median") {
+        $result = Median($Nums);
+        print("Median: " + $result + "\n");
+    } 
+    else {
+        print("Unknown operation: " + $userInput + "\n");
+    }
+}
+
+
+Calculator();
