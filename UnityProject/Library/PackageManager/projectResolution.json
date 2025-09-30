@@ -58,6 +58,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.toolchain.win-x86_64-linux-x86_64@2.0.10": {
+      "name": "com.unity.toolchain.win-x86_64-linux-x86_64",
+      "displayName": "Toolchain Win Linux x64",
+      "resolvedPath": "C:\\Users\\Owner\\Documents\\UVU\\UVU-AGD-Portfolio\\UnityProject\\Library\\PackageCache\\com.unity.toolchain.win-x86_64-linux-x86_64@426618737602",
+      "fingerprint": "426618737602d0ff76e85db678b73b56aa2e891a",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.10",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "Unity UI",
@@ -348,6 +358,26 @@
       "resolvedPath": "C:\\Users\\Owner\\Desktop\\Unity Hub\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
       "version": "1.0.0",
       "source": "builtin",
+      "testable": false
+    },
+    "com.unity.sysroot@2.0.10": {
+      "name": "com.unity.sysroot",
+      "displayName": "Sysroot Base",
+      "resolvedPath": "C:\\Users\\Owner\\Documents\\UVU\\UVU-AGD-Portfolio\\UnityProject\\Library\\PackageCache\\com.unity.sysroot@7bbbb9339c14",
+      "fingerprint": "7bbbb9339c143f6fbccaeb0a52c77b9217b35a71",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.10",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.sysroot.linux-x86_64@2.0.9": {
+      "name": "com.unity.sysroot.linux-x86_64",
+      "displayName": "Sysroot Linux x64",
+      "resolvedPath": "C:\\Users\\Owner\\Documents\\UVU\\UVU-AGD-Portfolio\\UnityProject\\Library\\PackageCache\\com.unity.sysroot.linux-x86_64@1998d1c7730e",
+      "fingerprint": "1998d1c7730e48fa49f28d983fececfc9cbd970b",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.9",
+      "source": "registry",
       "testable": false
     },
     "com.unity.ide.visualstudio@2.0.22": {
