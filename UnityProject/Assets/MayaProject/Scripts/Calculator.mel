@@ -108,7 +108,7 @@ proc string Add(string $input[]) {
 }
 
 
-proc Calculator() {
+global proc Calculator() {
     string $Nums[];
     string $userInput;
     string $NumInput;
@@ -177,6 +177,5 @@ proc Calculator() {
         print("Unknown operation: " + $userInput + "\n");
     }
 }
-
 
 Calculator();
