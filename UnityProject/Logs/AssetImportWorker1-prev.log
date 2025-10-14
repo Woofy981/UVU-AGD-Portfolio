@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/respin/6000.2.7f1-2eb0c79396db' branch; Version is '6000.2.7f2 (2b518236b676) revision 2838914'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Owner" at "2025-10-12T01:15:00.8141403Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Owner" at "2025-10-12T01:21:08.0003132Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32555 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-10-12T01:15:00Z
+Date: 2025-10-12T01:21:08Z
 
 COMMAND LINE ARGUMENTS:
 C:\Users\Owner\Desktop\Unity Hub\6000.2.7f2\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/Owner/Documents/UVU/UVU-AGD-Portfolio/UnityProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-56752
+57409
 -licensingIpc
 LicenseClient-Owner
 -job-worker-count
@@ -65,35 +65,35 @@ C:/Users/Owner/Documents/UVU/UVU-AGD-Portfolio/UnityProject
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13684]  Target information:
+Player connection [35260]  Target information:
 
-Player connection [13684]  * "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 3709220086 [EditorId] 3709220086 [Version] 1048832 [Id] WindowsEditor(7,PC981) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [35260]  * "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 4261638066 [EditorId] 4261638066 [Version] 1048832 [Id] WindowsEditor(7,PC981) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [13684] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [13684] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [35260] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35260] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
 [Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 32120, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.3+a4e98f1
-  Session Id:              05e4240cfc1b4465a333650caa788945
+  Session Id:              e7d652ee6db34ac89801065ee7663177
   Correlation Id:          e74714903b8e5534158760faee4cc21d
-  External correlation Id: 7855689905016588278
+  External correlation Id: 774941312375336276
   Machine Id:              5XmmF+zV4oOJoXIxqf7X9ZcAHz0=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Owner" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Owner-notifications" at "2025-10-12T01:15:00.870751Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Owner" (connect: 0.00s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Owner-notifications" at "2025-10-12T01:21:08.0622153Z"
 [Licensing::Module] Licensing Background thread has ended after 0.06s
-Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
 [Physics::Module] Id: 0xf2b8ea05
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.7f2 (2b518236b676)
 [Subsystems] Discovering subsystems at path C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/Resources/UnitySubsystems
@@ -109,7 +109,7 @@ Initialize mono
 Mono path[0] = 'C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -129,8 +129,8 @@ Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Ed
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
 Register platform support module: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.014749 seconds.
-- Loaded All Assemblies, in  0.300 seconds
+Registered in 0.012566 seconds.
+- Loaded All Assemblies, in  0.296 seconds
 Native extension for LinuxStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
@@ -139,7 +139,7 @@ Native extension for AppleTV target not found
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 278 ms
+Android Extension - Scanning For ADB Devices 291 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Failed to load: C:/Users/Owner/Desktop/Unity Hub/6000.2.7f2/Editor/Data/PlaybackEngines/VisionOSPlayer\x64\UnityEditor.VisionOS.Native.dll
@@ -147,9 +147,9 @@ Native extension for VisionOS target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.581 seconds
-Domain Reload Profiling: 878ms
-	BeginReloadAssembly (90ms)
+- Finished resetting the current domain, in  0.601 seconds
+Domain Reload Profiling: 894ms
+	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -157,25 +157,25 @@ Domain Reload Profiling: 878ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (90ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (121ms)
+		LoadAssemblies (91ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (121ms)
-			TypeCache.Refresh (120ms)
-				TypeCache.ScanAssembly (109ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (117ms)
+				TypeCache.ScanAssembly (106ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (581ms)
+	FinalizeReload (601ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (554ms)
+		SetupLoadedEditorAssemblies (573ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (394ms)
+			InitializePlatformSupportModulesInManaged (408ms)
 			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (79ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			ProcessInitializeOnLoadAttributes (82ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -185,8 +185,8 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.520 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.534 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for AppleTV target not found
 Native extension for iOS target not found
@@ -202,84 +202,88 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.409 seconds
-Domain Reload Profiling: 926ms
-	BeginReloadAssembly (130ms)
+- Finished resetting the current domain, in  0.459 seconds
+Domain Reload Profiling: 990ms
+	BeginReloadAssembly (134ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (29ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (321ms)
-		LoadAssemblies (253ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (254ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (140ms)
-			TypeCache.Refresh (110ms)
-				TypeCache.ScanAssembly (100ms)
-			BuildScriptInfoCaches (23ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (116ms)
+				TypeCache.ScanAssembly (107ms)
+			BuildScriptInfoCaches (29ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (410ms)
+	FinalizeReload (460ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (322ms)
+		SetupLoadedEditorAssemblies (365ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
+			InitializePlatformSupportModulesInManaged (23ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (207ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (227ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4002 unused Assets / (1.4 MB). Loaded Objects now: 4526.
-Memory consumption went from 90.0 MB to 88.7 MB.
-Total: 4.171700 ms (FindLiveObjects: 0.246900 ms CreateObjectMapping: 0.132400 ms MarkObjects: 2.936200 ms  DeleteObjects: 0.855100 ms)
+Unloading 4002 unused Assets / (1.2 MB). Loaded Objects now: 4526.
+Memory consumption went from 90.0 MB to 88.8 MB.
+Total: 4.314200 ms (FindLiveObjects: 0.238100 ms CreateObjectMapping: 0.114700 ms MarkObjects: 3.203700 ms  DeleteObjects: 0.756900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1049587.967287 seconds.
-  path: Assets/_External/Mini Simple Characters Skeleton Demo/Models/sword_wood.fbx
-  artifactKey: Guid(27f19f244afa43c43b7c5bff88b185bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_External/Mini Simple Characters Skeleton Demo/Models/sword_wood.fbx using Guid(27f19f244afa43c43b7c5bff88b185bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4eb3a252045622264231425a6ea270f6') in 0.0874746 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+  Time since last request: 1050025.482640 seconds.
+  path: Assets/MayaProject/Scenes/Calculator.ma
+  artifactKey: Guid(a1dda7a030a30ec448dc997d81765f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MayaProject/Scenes/Calculator.ma using Guid(a1dda7a030a30ec448dc997d81765f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a877ddb6b52297c549b9ce654ce62b1e') in 0.0362919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/_External/Mini Simple Characters Skeleton Demo/Models
-  artifactKey: Guid(9cfa3f335b1fe394ab43f458f5f88039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_External/Mini Simple Characters Skeleton Demo/Models using Guid(9cfa3f335b1fe394ab43f458f5f88039) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df287cfe4373dd488cd6bf8f6466780e') in 0.0003722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.002070 seconds.
+  path: Assets/MayaProject/Scenes/Glass Bottle.ma
+  artifactKey: Guid(0918abd93438ac04fa3802f5a5472617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MayaProject/Scenes/Glass Bottle.ma using Guid(0918abd93438ac04fa3802f5a5472617) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12e6933ef17776e11e52b9386007bb98') in 0.2583263 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/_External/Mini Simple Characters Skeleton Demo/Models/mini simple skeleton demo.fbx
-  artifactKey: Guid(41f081d5c6d286c47a33bed3f84de79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_External/Mini Simple Characters Skeleton Demo/Models/mini simple skeleton demo.fbx using Guid(41f081d5c6d286c47a33bed3f84de79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0db7c0164adf7a70e4c011f97b97234') in 0.0458383 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 80
+  Time since last request: 0.000024 seconds.
+  path: Assets/MayaProject/Scenes/One-Hand Sword.ma
+  artifactKey: Guid(d4013fc80adf8a3429e1dc966551df44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MayaProject/Scenes/One-Hand Sword.ma using Guid(d4013fc80adf8a3429e1dc966551df44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20f58af4d4196db6b033fe7ccfe8e179') in 0.224103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.764983 seconds.
-  path: Assets/MayaProject/Models/Textured Models/Treasure Chest.obj
-  artifactKey: Guid(3f84e52bcb37ff14b8442925750ecc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MayaProject/Models/Textured Models/Treasure Chest.obj using Guid(3f84e52bcb37ff14b8442925750ecc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '024dbbb50009d3c6deb4d6b8636b526b') in 0.0648078 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+  Time since last request: 0.000026 seconds.
+  path: Assets/MayaProject/Scenes/Treasure Chest.ma
+  artifactKey: Guid(bd1f5673dd878cf4a8da604d54315a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MayaProject/Scenes/Treasure Chest.ma using Guid(bd1f5673dd878cf4a8da604d54315a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '265c2f81c21828dca638bafefac44d9f') in 0.0268546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 108.549358 seconds.
-  path: Assets/MayaProject/Models/Untextured Models/Treasure Chest.obj
-  artifactKey: Guid(0b94f52cfd598e348a7722aa9d4d13fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MayaProject/Models/Untextured Models/Treasure Chest.obj using Guid(0b94f52cfd598e348a7722aa9d4d13fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48eff48e53c76db9659638189ec3f78b') in 0.027129 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+  Time since last request: 0.000016 seconds.
+  path: Assets/MayaProject/Scenes/Forest Village Blockout.ma
+  artifactKey: Guid(58303edca1a055448a2de5114051148d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MayaProject/Scenes/Forest Village Blockout.ma using Guid(58303edca1a055448a2de5114051148d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc788e3d1dd36238e456ce07d2c065d7') in 0.1152597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 127
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
