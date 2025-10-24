@@ -1,0 +1,37 @@
+string $window = `window -title "Calculator " -widthHeight 300 300`;
+gridLayout -numberOfColumns 2 -cellWidthHeight 150 50;
+        text -label "Number of Objects:" -bgc 0.25 0.25 0.25;
+        intField numField;
+        text -label "X Chord:" -bgc 0.5 0.1 0.25;
+        floatField xField;
+        text -label "Y Chord:" -bgc 0.1 0.5 0.25;
+        floatField yField;
+        text -label "Z Chord:" -bgc 0.1 0.25 0.5;
+        floatField zField;
+        button -label "Confirm" -command "Dupe";
+
+showWindow $window;
+
+global proc Dupe(){
+
+        int $numVal = `intField -q -v "numField"`;
+        float $xVal = `floatField -q -v "xField"`, 
+        $yVal = `floatField -q -v "yField"`, $zVal = `floatField -q -v "zField"`;
+
+        string $selection[] = `ls -sl`;
+
+        if(size($selection) == 0){
+                error "Please select an object";
+        }
+
+        else{
+                for ($i = 0; $i < size ($selection); $i++){
+
+                        for ($j = 1; $j <= $numVal; $j++){
+                                string $newObj[] = `duplicate $selection[$i]`;
+                                move ($xVal * $i) ($yVal * $i) ($zVal * $i) $newObj;
+                        }
+                }
+
+        }
+}
