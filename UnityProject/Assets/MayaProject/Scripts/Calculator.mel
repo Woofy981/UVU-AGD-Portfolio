@@ -99,23 +99,23 @@ global proc string Calculator(string $operation, float $nums[]) {
         }
     }
 
-    if ($operation == "Add" || $operation == "add") {
+    if ($operation == "Add" || $operation == "add" || $operation == "+") {
         $result = Add($nums);
         $opnWrd = "The sum of " ;
     } 
-    else if ($operation == "Sub" || $operation == "sub") {
+    else if ($operation == "Sub" || $operation == "sub" || $operation == "-") {
         $result = Sub($nums);
         $opnWrd = "The difference of ";
     } 
-    else if ($operation == "Div" || $operation == "div") {
+    else if ($operation == "Div" || $operation == "div" || $operation == "/") {
         $result = Div($nums);
         $opnWrd = "The quotient of ";
     } 
-    else if ($operation == "Multi" || $operation == "multi") {
+    else if ($operation == "Multi" || $operation == "multi" || $operation == "*") {
         $result = Multi($nums);
         $opnWrd = "The product of ";
     } 
-    else if ($operation == "Power" || $operation == "power") {
+    else if ($operation == "Power" || $operation == "power" || $operation == "^") {
         $result = Power($nums);
         $opnWrd = "The power of ";
     } 
@@ -131,5 +131,41 @@ global proc string Calculator(string $operation, float $nums[]) {
         warning("Unknown operation: " + $operation + "\n");
     }
 
-    return ($opnWrd + $numStr + " is " + $result + ".\n");
+    return $result;
 }
+
+global proc CalcUI(){
+
+    string $window = `window -title "Calculator " -widthHeight 400 300`;
+    gridLayout -numberOfColumns 2 -cellWidthHeight 200 75;
+            text -label "Seperate numbers with spaces:";
+            string $nums = `textField numField`;
+            text -label "Operation (+,-,/,*,^,Mean,Median):";
+            string $operate = `textField opField`;
+
+            button -label "Calculate" -command ("CalculateResult(\"" + $operate + "\", \"" + $nums + "\")");
+            text -label "" -bgc 0.37 0.37 0.37;
+            text -label "Result:";
+            textField -text "Result will show here" resultField;
+
+            
+    showWindow $window;
+
+
+}
+
+global proc CalculateResult(string $oper, string $argument){
+
+    string $op = `textField -q -text $oper`, $args = `textField -q -text $argument`;
+    string $argArray[] = stringToStringArray($args, " ");
+    float $numArray[];
+
+    for($args in $argArray){
+        $numArray[size($numArray)] = (float)$args;
+    }
+
+    float $result = Calculator($op, $numArray);
+    textField -edit -text $result resultField;
+}
+
+CalcUI();
