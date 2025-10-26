@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Rain.ma
-//Last modified: Sat, Oct 25, 2025 10:43:16 PM
+//Name: Rain_v1.ma
+//Last modified: Sat, Oct 25, 2025 10:47:53 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,26 +13,27 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "34A5D514-4B6D-E331-F597-E79678417662";
+fileInfo "UUID" "E63261B6-4467-201A-C09C-F2BE5BAFC6DB";
 createNode transform -s -n "persp";
 	rename -uid "50A247D5-C042-AED7-01B4-DCB89E9990C4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.6338734828180863 9.8175354804311983 11.80459977885662 ;
-	setAttr ".r" -type "double3" -9.9383526413734344 2517.3999999979414 -9.9494756704113755e-17 ;
+	setAttr ".t" -type "double3" 0.42289551144739262 7.7779512620594007 15.44102287299663 ;
+	setAttr ".r" -type "double3" -9.6000000000000192 361.59999999998462 0 ;
+	setAttr ".rpt" -type "double3" 3.7972940192395371e-17 -2.2288268158948372e-16 2.4707214317720583e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3E7BF761-AD4B-B431-9D2F-639FCB2FAE79";
 	setAttr -k off ".v" no;
-	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 11.591779548049661;
+	setAttr ".fl" 34.999999999999979;
+	setAttr ".coi" 15.360912055443;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 4.1517742872238159 7.5462837219238281 -0.051814809441566467 ;
+	setAttr ".tp" -type "double3" 0 5.2162312101572752 0.30112957954406738 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4DED9A5C-044C-4968-DB5C-CC9C3E21AA10";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.20148302633748622 1000.1660689409434 -0.38396162033876285 ;
+	setAttr ".t" -type "double3" 0.026884952432968678 1000.1660689409434 -0.59156887376644995 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "78E3D639-3047-CD9E-EAFB-E085FA002F62";
@@ -49,13 +50,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "0057EE54-EC41-E530-3975-9AAFE7667292";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.16206017094098008 5.2567429213410763 1008.4192186848752 ;
+	setAttr ".t" -type "double3" 0.1377528668289571 5.2231212217037744 1008.4192186848752 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "55CD6DD0-2A4B-38D1-C856-36AA8C24C940";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1008.3441550390355;
-	setAttr ".ow" 14.462845946653733;
+	setAttr ".ow" 12.664105442364029;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -65,14 +66,14 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "F1EED217-C344-75FE-90A7-E3B834C5D1D6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1008.4697547832607 5.9766497392535971 -0.54785136509759835 ;
+	setAttr ".t" -type "double3" 1008.4697547832607 5.4020573190781613 -0.34099809383444174 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "69E8AD61-3742-5DD0-7B31-4FBFBCCC83C7";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1007.881981430399;
-	setAttr ".ow" 18.534859366980282;
+	setAttr ".ow" 13.675299600175373;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -34856,4 +34857,4 @@ connectAttr "pSphereShape3.ciog.cog[2]" ":initialShadingGroup.dsm" -na;
 connectAttr "pSphere4Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "pSphere4Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "polySurfaceShape2.iog.og[0]" ":initialShadingGroup.dsm" -na;
-// End of Rain.ma
+// End of Rain_v1.ma
