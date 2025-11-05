@@ -87,6 +87,7 @@
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\IntDataBehavior.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryConfigBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\InputSystem\GameInputs.cs" />
+    <Compile Include="Assets\ArtisanDream.Tools\Triggers\TriggerEventsBehaviourV2.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Triggers\TriggerParticleEffect.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\BoolData.cs" />
@@ -116,7 +117,6 @@
     <Compile Include="Assets\ArtisanDream.Tools\Matching\IdBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InGamePurchase.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Sprites\SpriteRendererBehaviour.cs" />
-    <Compile Include="Assets\ArtisanDream.Tools\Triggers\TriggerEventsBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Vector3Data\Vector3DataSystem.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Utilities\Instancing\InstancingBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\FloatData.cs" />

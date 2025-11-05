@@ -554,7 +554,7 @@
 "Assets/ArtisanDream.Tools/Triggers/AttachOnTrigger.cs"
 "Assets/ArtisanDream.Tools/Triggers/SimpleTriggerEventBehaviour.cs"
 "Assets/ArtisanDream.Tools/Triggers/TriggerEvents2DBehaviour.cs"
-"Assets/ArtisanDream.Tools/Triggers/TriggerEventsBehaviour.cs"
+"Assets/ArtisanDream.Tools/Triggers/TriggerEventsBehaviourV2.cs"
 "Assets/ArtisanDream.Tools/Triggers/TriggerGameActionBehaviour.cs"
 "Assets/ArtisanDream.Tools/Triggers/TriggerParticleEffect.cs"
 "Assets/ArtisanDream.Tools/UI/ImageBehaviour.cs"
