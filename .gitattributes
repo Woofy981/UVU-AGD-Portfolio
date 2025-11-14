@@ -22,6 +22,9 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mov filter=lfs diff=lfs merge=lfs -text
 *.webm filter=lfs diff=lfs merge=lfs -text
+git filter=lfs diff=lfs merge=lfs -text
+lfs filter=lfs diff=lfs merge=lfs -text
+track filter=lfs diff=lfs merge=lfs -text
 *.ma filter=lfs diff=lfs merge=lfs -text
 UnityProject/Assets/MayaProject/Models/* filter=lfs diff=lfs merge=lfs -text
 *.spp filter=lfs diff=lfs merge=lfs -text
