@@ -20,8 +20,14 @@ public class Instancer : ScriptableObject
     {
         Instantiate(instance, parentObj);
     }
-    public void InstanceFromV3Collection (Vector3DataCollection collection)
+    public void InstanceFromV3Collection(Vector3DataCollection collection)
     {
         Instantiate(prefab, collection.vector3Datas[indexer.Value].value, Quaternion.identity);
+    }
+    
+    //Instance froma transform position
+    public void InstanceFromTransform(Transform obj)
+    {
+        Instantiate(prefab, obj.position, Quaternion.identity);
     }
 }

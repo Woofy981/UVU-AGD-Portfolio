@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ea1262935ec4609a988bcb6bc9cee2, type: 3}
   m_Name: Hunt
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3
   angularSpeed: 120
   destinationAction: {fileID: 11400000, guid: e66e809d72d36e142a80c424eb7bb262, type: 2}
   destination: {fileID: 0}
