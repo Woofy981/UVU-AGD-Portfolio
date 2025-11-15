@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1641
     height: 1333
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 356}
   m_MaxSize: {x: 10000, y: 10000}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 55
+  controlID: 52
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 52
+  controlID: 87
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 53
+  controlID: 88
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 54
+  controlID: 51
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -471,24 +471,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 54c70000
-      m_LastClickedID: 51028
-      m_ExpandedIDs: 068bfaffde94faff14a1faff7e17fbff0afbfbff0603fcff5406fcff6023fcffb227fcfffe33fcff1a3cfeff8653feff5c55feff0057feff565ffeffc663feff5c70feff0a72fefffa8fffff18fbffff1698000080c50000dec500004ac600003ec7000070c70000
+      scrollPos: {x: 0, y: 304}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d67bffff207effff2ab50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: HealthBar
-        m_OriginalName: HealthBar
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 51092
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 10}
@@ -1078,9 +1078,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.9314983, y: 2.900299, z: 5.0081787}
+    m_Target: {x: -5.3310995, y: 2.7781706, z: -0.11604825}
     speed: 2
-    m_Value: {x: -2.9314983, y: 2.900299, z: 5.0081787}
+    m_Value: {x: -5.3310995, y: 2.7781706, z: -0.11604825}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1126,13 +1126,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.18814297, y: 0.7641501, z: -0.2574288, w: 0.56180614}
+    m_Target: {x: 0.35092372, y: 0.6247018, z: -0.37302566, w: 0.5904992}
     speed: 2
-    m_Value: {x: 0.18802842, y: 0.76368487, z: -0.25727206, w: 0.56146413}
+    m_Value: {x: 0.35014725, y: 0.6252002, z: -0.37332076, w: 0.5891971}
   m_Size:
-    m_Target: 7.031277
+    m_Target: 16.38834
     speed: 2
-    m_Value: 7.031277
+    m_Value: 16.401196
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Game/Prefabs
+    - Assets/_Game/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1346,16 +1346,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Game/Prefabs
+  - Assets/_Game/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Owner\Documents\UVU\UVU-AGD-Portfolio\UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 8}
-    m_SelectedIDs: 968b0000
-    m_LastClickedID: 35734
-    m_ExpandedIDs: 00000000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b0000108b00009e8b0000888d000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 84b30000
+    m_LastClickedID: 45956
+    m_ExpandedIDs: 0000000070b3000074b3000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1384,7 +1384,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f28a0000f48a0000f68a0000f88a0000fa8a0000fc8a0000fe8a0000008b0000028b0000048b0000068b0000088b00000a8b00000c8b00000e8b0000108b0000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
