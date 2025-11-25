@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33e92b43689542cbba2b63d5a00d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyBehaviour
-  seconds: 20
+  seconds: 60
   useTrigger: 1
 --- !u!114 &5272615130628494090
 MonoBehaviour:
