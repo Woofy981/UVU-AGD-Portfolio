@@ -109,6 +109,15 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""type"": ""Button"",
+                    ""id"": ""2b17a846-8632-4bbd-8301-9895ab79dfdd"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -175,6 +184,72 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""id"": ""e57d671c-7008-417d-94c6-692ac85087fb"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""99b7b2c3-5a0d-4bc2-a74c-618733937e0a"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""56aeff4b-2398-4cfb-8a69-5c506328b0bb"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""cb331596-4adc-49ab-8c99-371c6f91c355"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""5e6edcbf-6d4b-4862-ac41-f56e91ce3e17"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7db1568-1795-4bd4-a296-6875a7233cbd"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -295,6 +370,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_KeyActionMap = asset.FindActionMap("KeyActionMap", throwIfNotFound: true);
         m_KeyActionMap_Vertical = m_KeyActionMap.FindAction("Vertical", throwIfNotFound: true);
         m_KeyActionMap_Click = m_KeyActionMap.FindAction("Click", throwIfNotFound: true);
+        m_KeyActionMap_WASD = m_KeyActionMap.FindAction("WASD", throwIfNotFound: true);
         // Touch
         m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
         m_Touch_PrimaryContact = m_Touch.FindAction("PrimaryContact", throwIfNotFound: true);
@@ -387,6 +463,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
     private List<IKeyActionMapActions> m_KeyActionMapActionsCallbackInterfaces = new List<IKeyActionMapActions>();
     private readonly InputAction m_KeyActionMap_Vertical;
     private readonly InputAction m_KeyActionMap_Click;
+    private readonly InputAction m_KeyActionMap_WASD;
     /// <summary>
     /// Provides access to input actions defined in input action map "KeyActionMap".
     /// </summary>
@@ -406,6 +483,10 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "KeyActionMap/Click".
         /// </summary>
         public InputAction @Click => m_Wrapper.m_KeyActionMap_Click;
+        /// <summary>
+        /// Provides access to the underlying input action "KeyActionMap/WASD".
+        /// </summary>
+        public InputAction @WASD => m_Wrapper.m_KeyActionMap_WASD;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -438,6 +519,9 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @Click.started += instance.OnClick;
             @Click.performed += instance.OnClick;
             @Click.canceled += instance.OnClick;
+            @WASD.started += instance.OnWASD;
+            @WASD.performed += instance.OnWASD;
+            @WASD.canceled += instance.OnWASD;
         }
 
         /// <summary>
@@ -455,6 +539,9 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @Click.started -= instance.OnClick;
             @Click.performed -= instance.OnClick;
             @Click.canceled -= instance.OnClick;
+            @WASD.started -= instance.OnWASD;
+            @WASD.performed -= instance.OnWASD;
+            @WASD.canceled -= instance.OnWASD;
         }
 
         /// <summary>
@@ -736,6 +823,13 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnClick(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "WASD" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnWASD(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Touch" which allows adding and removing callbacks.
