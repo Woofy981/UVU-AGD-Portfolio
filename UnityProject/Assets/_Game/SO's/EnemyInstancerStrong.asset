@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e842cc2663f46d98d43922a660ba8e, type: 3}
   m_Name: EnemyInstancerStrong
   m_EditorClassIdentifier: Assembly-CSharp::Instancer
-  prefab: {fileID: 2076598415295143927, guid: 28973575586f86b43af80168f8f79e14, type: 3}
+  prefab: {fileID: 731109078278359443, guid: f980f5ebbaefb5e48a89178f553077f8, type: 3}
   indexer: {fileID: 0}

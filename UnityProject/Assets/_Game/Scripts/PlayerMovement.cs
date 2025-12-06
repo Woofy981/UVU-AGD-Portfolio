@@ -1,12 +1,15 @@
 using UnityEngine;
-using UnityEngine.InputSystem;   // <-- NEW INPUT SYSTEM
+using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 8f;
-    public float rotationSpeed = 5f;
+    public float moveSpeed = 8f, rotationSpeed = 5f;
 
     private CharacterController controller;
     private Vector2 moveInput;
@@ -14,23 +17,28 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        StartCoroutine(MovementLoop());
     }
 
-    void Update()
+    private IEnumerator MovementLoop()
     {
-       Vector3 direction = transform.TransformDirection(new Vector3(moveInput.x, 0f, moveInput.y)).normalized;
-
-        if (direction.magnitude >= 0.1f)
+        while (true)
         {
-            // Move
-            Vector3 move = direction * moveSpeed;
-            controller.SimpleMove(move);
+            Vector3 direction = transform.TransformDirection(new Vector3(moveInput.x, 0f, moveInput.y)).normalized;
 
-            // Rotate
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            if (direction.magnitude >= 0.1f)
+            {
+                // Move
+                Vector3 move = direction * moveSpeed;
+                controller.SimpleMove(move);
+
+                // Rotate
+                Quaternion targetRotation = Quaternion.LookRotation(direction);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+
+            yield return null;
         }
-
     }
 
     // NEW INPUT SYSTEM CALLBACK
