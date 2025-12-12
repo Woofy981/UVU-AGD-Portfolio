@@ -5252,6 +5252,7 @@ GameObject:
   - component: {fileID: 228964534}
   - component: {fileID: 228964536}
   - component: {fileID: 228964535}
+  - component: {fileID: 228964537}
   m_Layer: 5
   m_Name: Win/Lose
   m_TagString: Untagged
@@ -5377,6 +5378,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228964533}
   m_CullTransparentMesh: 1
+--- !u!114 &228964537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228964533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64bea938cc6b02418697b1609212cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextColorGameActionListener
+  action: {fileID: 11400000, guid: 58f89648952709d42b3c23e69e57fcc6, type: 2}
+  colorChanger: {fileID: 0}
+  colorToSet: {r: 0, g: 0.7176471, b: 0.07450981, a: 1}
 --- !u!1001 &234132702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26041,7 +26057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8327ca5ce18ed4725ae75f76e0f07d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleCoroutineBehaviour
-  seconds: 60
+  seconds: 10
   event:
     m_PersistentCalls:
       m_Calls:

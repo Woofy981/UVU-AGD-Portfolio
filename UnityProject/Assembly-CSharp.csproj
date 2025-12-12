@@ -117,9 +117,11 @@
     <Compile Include="Assets\ArtisanDream.Tools\SingleVariables\SimpleFloatData.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\ActionsEvents\GameAction.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\RigidBodiesAndColliders\ApplyForce.cs" />
+    <Compile Include="Assets\_Game\Scripts\TextColorListener.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Bahaviours\MonoEventBehaviours.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Store\Scripts\InventoryUIButtonBehaviour.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Character\Scripts\CharacterPatterns\CharacterMoveAndRotate3d.cs" />
+    <Compile Include="Assets\_Game\Scripts\TextColorChanger.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Matching\Id.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Utilities\GameConfig.cs" />
     <Compile Include="Assets\ArtisanDream.Tools\Vector3Data\Vector3DataSystemBehaviour.cs" />
