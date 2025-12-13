@@ -49,9 +49,4 @@ public class GameActionHandler : MonoBehaviour
         yield return waitObj;
         InvokeEvent(respondLateEvent);
     }
-
-    private void OnDestroy()
-    {
-        action.RaiseNoArgs = null;
-    }
 }
