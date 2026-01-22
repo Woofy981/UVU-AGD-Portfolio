@@ -5188,7 +5188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &202431383
 Transform:
   m_ObjectHideFlags: 0
@@ -6758,7 +6758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &267037060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34706,7 +34706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1437263946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37223,7 +37223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1513591563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51965,6 +51965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dawn_FinalModel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13d9013ab2814f94793e142600ee0680, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1963002211540560072, guid: 13d9013ab2814f94793e142600ee0680, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -53364,6 +53368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 3373832423162011463, guid: 9238a7a2768c9484291cf700c173735b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3802920297314464064, guid: 9238a7a2768c9484291cf700c173735b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2440.871
@@ -53421,6 +53429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonFast
       objectReference: {fileID: 0}
+    - target: {fileID: 8086309385438322235, guid: 49bd46def255af843901f7d9ced115f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8409893839203371270, guid: 49bd46def255af843901f7d9ced115f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2440.5466
@@ -53477,6 +53489,10 @@ PrefabInstance:
     - target: {fileID: 731109078278359443, guid: f980f5ebbaefb5e48a89178f553077f8, type: 3}
       propertyPath: m_Name
       value: SkeletonStrong
+      objectReference: {fileID: 0}
+    - target: {fileID: 731109078278359443, guid: f980f5ebbaefb5e48a89178f553077f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7343290205367218058, guid: f980f5ebbaefb5e48a89178f553077f8, type: 3}
       propertyPath: m_LocalPosition.x
