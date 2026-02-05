@@ -10,30 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
-  m_Name: PlayerHealth
+  m_Name: DmgLvl
   m_EditorClassIdentifier: Assembly-CSharp::FloatData
-  value: 1
-  minValue: 0
-  maxValue: 1e+21
+  value: -0.1
+  minValue: -1e+13
+  maxValue: 1
   valueOutOfRange:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: adf27805342f7a9459bbc92c6f0e19af, type: 2}
-        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: a9dfa92600c583f40b46c7a644f2800d, type: 2}
+      - m_Target: {fileID: 11400000, guid: 9f1242ae627e5bb46b1847dbbbe9dbc6, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
         m_Mode: 1

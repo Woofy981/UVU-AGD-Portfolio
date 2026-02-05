@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6df0c6962af14c60b2d5c35ebd9c64c, type: 3}
-  m_Name: BossLevel
-  m_EditorClassIdentifier: Assembly-CSharp::IntData
+  m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
+  m_Name: EnemyHealth
+  m_EditorClassIdentifier: Assembly-CSharp::FloatData
   value: 1
-  minValue: 0
-  maxValue: 10
+  minValue: 0.001
+  maxValue: 1e+38
   valueOutOfRange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: a42adc79be1358f44857a95b056e44e7, type: 2}
+      - m_Target: {fileID: 11400000, guid: 0178efeb660c4db4db13567d48733d5e, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
         m_Mode: 1
@@ -32,16 +32,4 @@ MonoBehaviour:
         m_CallState: 2
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000}
-        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
-        m_MethodName: CheckValueRange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []

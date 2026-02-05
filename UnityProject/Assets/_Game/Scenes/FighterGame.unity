@@ -182,7 +182,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.841628, b: 0.4198113, a: 1}
     m_HighlightedColor: {r: 1, g: 0.9051887, b: 0.6839622, a: 1}
     m_PressedColor: {r: 0.6981132, g: 0.5592253, b: 0.18770024, a: 1}
-    m_SelectedColor: {r: 0.69803923, g: 0.56078434, b: 0.18823531, a: 1}
+    m_SelectedColor: {r: 1, g: 0.84313726, b: 0.41960785, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -210,9 +210,21 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: -0.1
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: a595e680ea36dd74d908454fad0853cf, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0.1
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 33d4f5f4ed43349459e30fd7f7c88c65, type: 2}
         m_TargetAssemblyTypeName: IntData, Assembly-CSharp
@@ -582,7 +594,7 @@ GameObject:
   - component: {fileID: 194386763}
   - component: {fileID: 194386762}
   m_Layer: 5
-  m_Name: SpdScaleBG
+  m_Name: HealthScaleBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1300,6 @@ GameObject:
   m_Component:
   - component: {fileID: 471611451}
   - component: {fileID: 471611452}
-  - component: {fileID: 471611453}
   m_Layer: 0
   m_Name: PlayerAttack
   m_TagString: Untagged
@@ -1351,37 +1362,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &471611453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471611450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703f3244536a4c97b5337900939d3ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoroutinesBehaviour
-  startHoldTime: 0.1
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  seconds: 1
-  delayEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  repeatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  endEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  counterNum: {fileID: 0}
-  maxCounterNum: 3
 --- !u!1001 &519217316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,10 +1370,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1383024592}
     m_Modifications:
-    - target: {fileID: 696692432774784663, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4424886747934806561, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
       propertyPath: m_Name
       value: SkeletonIdle
@@ -1443,9 +1419,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 696692432774784663, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
-    - {fileID: 786115441644817631, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
-    m_RemovedGameObjects: []
+    - {fileID: 0}
+    - {fileID: 0}
+    m_RemovedGameObjects:
+    - {fileID: 2180870686826929677, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1adf7d40cdea4543bcbe5bf9ccc953e, type: 3}
@@ -2174,6 +2151,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668042171}
   m_CullTransparentMesh: 1
+--- !u!1001 &714391132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7771197338001757057, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8369
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407949556692162304, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bb65e1cc43c58b4aadd127d3c422969, type: 3}
 --- !u!1 &738016150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,7 +2221,7 @@ GameObject:
   - component: {fileID: 738016153}
   - component: {fileID: 738016152}
   m_Layer: 5
-  m_Name: SpdScale
+  m_Name: HealthScale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2306,7 +2340,7 @@ GameObject:
   - component: {fileID: 756848213}
   - component: {fileID: 756848212}
   m_Layer: 5
-  m_Name: SpdUp
+  m_Name: HlthUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2497,7 +2531,7 @@ MonoBehaviour:
         m_MethodName: UpdateWithFloatData
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 927e9ac2cb893c44ba94ffe836eb0cb0, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: a595e680ea36dd74d908454fad0853cf, type: 2}
           m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 1
@@ -2512,7 +2546,7 @@ MonoBehaviour:
         m_MethodName: UpdateWithFloatData
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 927e9ac2cb893c44ba94ffe836eb0cb0, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: a595e680ea36dd74d908454fad0853cf, type: 2}
           m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2664,9 +2698,9 @@ RectTransform:
   - {fileID: 668042172}
   - {fileID: 1908919723}
   - {fileID: 194386761}
-  - {fileID: 56139172}
   - {fileID: 969661932}
   - {fileID: 381800140}
+  - {fileID: 56139172}
   - {fileID: 1123526444}
   - {fileID: 756848211}
   m_Father: {fileID: 0}
@@ -2763,6 +2797,7 @@ GameObject:
   - component: {fileID: 891067763}
   - component: {fileID: 891067762}
   - component: {fileID: 891067764}
+  - component: {fileID: 891067765}
   m_Layer: 0
   m_Name: EnemySpawn
   m_TagString: Untagged
@@ -2806,11 +2841,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
         m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
-        m_MethodName: set_Value
-        m_Mode: 4
+        m_MethodName: SetValue
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: cfd68312ec47bad4aabf74f28d91e68e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 1
           m_StringArgument: 
@@ -2911,7 +2946,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: cfd68312ec47bad4aabf74f28d91e68e, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 1
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: edd1db7aa018dae48b4e0f6f9bdbbafb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 1
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: cfd68312ec47bad4aabf74f28d91e68e, type: 2}
         m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
         m_MethodName: set_Value
         m_Mode: 4
@@ -2919,7 +2978,90 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 5
+          m_FloatArgument: 2
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  respondLateEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 0.1
+--- !u!114 &891067765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891067761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65180f705bb904ee98a80edc6dcf0d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameActionHandler
+  action: {fileID: 11400000, guid: 5c2d60713e826484fbd9b83244223002, type: 2}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  respondEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 898943204}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1539936756}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 646e951dc0d26994fb704c620a0f9cea, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: cfd68312ec47bad4aabf74f28d91e68e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 1
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: edd1db7aa018dae48b4e0f6f9bdbbafb, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: set_Value
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -4324,66 +4466,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324819609}
   m_CullTransparentMesh: 1
---- !u!1 &1376958532
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1376958533}
-  - component: {fileID: 1376958534}
-  m_Layer: 0
-  m_Name: EnemyInstancer (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1376958533
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376958532}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8400002, y: 0.46, z: 5.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376958534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376958532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8327ca5ce18ed4725ae75f76e0f07d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleCoroutineBehaviour
-  seconds: 1
-  event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: e78eb70ea641a564da63b52f3cc4901e, type: 2}
-        m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
-        m_MethodName: InstanceFromTransform
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1376958533}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1383024591
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +4660,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 646e951dc0d26994fb704c620a0f9cea, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: IncrementValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   respondLateEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4600,13 +4694,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
         m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
-        m_MethodName: set_Value
-        m_Mode: 4
+        m_MethodName: SetValue
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: cfd68312ec47bad4aabf74f28d91e68e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4662,6 +4756,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5551493341194074113, guid: 1ecf0db5793d94c4f80eeba7771c5706, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834358439635391321, guid: 1ecf0db5793d94c4f80eeba7771c5706, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622799968311349479, guid: 1ecf0db5793d94c4f80eeba7771c5706, type: 3}
+      propertyPath: triggerEnterRepeatEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9041573076447048556, guid: 1ecf0db5793d94c4f80eeba7771c5706, type: 3}
@@ -5226,7 +5328,7 @@ GameObject:
   - component: {fileID: 1908919725}
   - component: {fileID: 1908919724}
   m_Layer: 5
-  m_Name: SpdTxt
+  m_Name: HealthTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5271,7 +5373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Speed
+  m_text: 'Health
 
 '
   m_isRightToLeft: 0
@@ -5855,8 +5957,8 @@ SceneRoots:
   - {fileID: 2046544276}
   - {fileID: 1627414758}
   - {fileID: 1278333568}
-  - {fileID: 1376958533}
   - {fileID: 789573200}
   - {fileID: 327835913}
   - {fileID: 891067763}
   - {fileID: 460508114}
+  - {fileID: 714391132}

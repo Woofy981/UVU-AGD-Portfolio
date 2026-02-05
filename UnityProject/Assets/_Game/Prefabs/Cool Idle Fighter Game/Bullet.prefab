@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3839842502660199194}
   - component: {fileID: 6984357931312993666}
   - component: {fileID: 4063475193614452035}
-  - component: {fileID: 5272830899991425358}
   - component: {fileID: -348197245723751719}
   - component: {fileID: 4540775829011007525}
   - component: {fileID: 1104987832034535652}
+  - component: {fileID: 1391473206059518249}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -121,20 +121,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5272830899991425358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771197338001757057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33e92b43689542cbba2b63d5a00d04e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyBehaviour
-  seconds: 2
-  useTrigger: 1
 --- !u!75 &-348197245723751719
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -189,12 +175,12 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: b735112710edcc942b0e25ab20803b9c, type: 2}
         m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
         m_MethodName: UpdateValue
-        m_Mode: 4
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 927e9ac2cb893c44ba94ffe836eb0cb0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
-          m_FloatArgument: -0.25
+          m_FloatArgument: -0.1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -222,3 +208,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1391473206059518249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771197338001757057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33e92b43689542cbba2b63d5a00d04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyBehaviour
+  seconds: 2
+  useTrigger: 1

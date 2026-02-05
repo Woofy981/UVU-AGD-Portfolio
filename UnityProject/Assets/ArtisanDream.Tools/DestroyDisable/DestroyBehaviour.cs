@@ -22,6 +22,14 @@ public class DestroyBehaviour : MonoBehaviour
 	{
 		Destroy(obj);
 	}
+	
+	private void OnTriggerEnter(Collider other)
+	{
+		if (useTrigger)
+		{
+			DestroyObj();
+		}
+	}
 
 //	private void OnTriggerEnter(Collider other)
 //	{
