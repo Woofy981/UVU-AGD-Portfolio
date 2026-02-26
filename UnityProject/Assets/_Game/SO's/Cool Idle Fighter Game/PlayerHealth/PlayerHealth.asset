@@ -33,7 +33,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: a9dfa92600c583f40b46c7a644f2800d, type: 2}
+      - m_Target: {fileID: 11400000, guid: 5c85660989c18c84185d850993b55655, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
         m_Mode: 1

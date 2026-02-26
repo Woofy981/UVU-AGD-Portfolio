@@ -25,6 +25,11 @@ public class IntData : ScriptableObject
     {
         value += amount;
     }
+    
+    public void UpdateValue(IntData data)
+    {
+        Value += data.Value;
+    }
 
     public void SetValue(IntData data)
     {
