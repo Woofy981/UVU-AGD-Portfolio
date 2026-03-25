@@ -16,3 +16,7 @@ UnityProject/Logs/
 UnityProject/Temp/
 
 UnityProject/Assets/Houdini/backup/
+
+UnityProject/Packages/manifest.json
+
+UnityProject/Packages/packages-lock.json
