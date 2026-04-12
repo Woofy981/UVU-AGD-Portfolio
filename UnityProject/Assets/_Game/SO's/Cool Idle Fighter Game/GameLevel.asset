@@ -33,3 +33,6 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
+  onValueZero:
+    m_PersistentCalls:
+      m_Calls: []

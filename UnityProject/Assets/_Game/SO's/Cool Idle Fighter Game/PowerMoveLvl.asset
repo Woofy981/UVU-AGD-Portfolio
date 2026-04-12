@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
   m_Name: PowerMoveLvl
   m_EditorClassIdentifier: Assembly-CSharp::FloatData
-  value: 0
+  value: 0.03
   minValue: -1
   maxValue: 1
   valueOutOfRange:
@@ -20,7 +20,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: cb0d71ad274085a458dd0d8e0f672e23, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31,5 +31,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onValueZero:
     m_PersistentCalls:
       m_Calls: []

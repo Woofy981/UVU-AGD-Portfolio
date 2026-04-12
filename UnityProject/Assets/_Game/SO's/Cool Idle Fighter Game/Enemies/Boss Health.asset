@@ -20,7 +20,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 0178efeb660c4db4db13567d48733d5e, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
-        m_MethodName: RaiseAction
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31,5 +31,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onValueZero:
     m_PersistentCalls:
       m_Calls: []
