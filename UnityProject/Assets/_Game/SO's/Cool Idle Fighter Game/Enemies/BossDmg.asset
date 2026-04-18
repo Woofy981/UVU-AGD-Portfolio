@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
   m_Name: BossDmg
   m_EditorClassIdentifier: Assembly-CSharp::FloatData
-  value: -0.1
+  value: -0.5
   minValue: -1e+15
   maxValue: 0
   valueOutOfRange:
@@ -31,5 +31,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onValueZero:
     m_PersistentCalls:
       m_Calls: []
