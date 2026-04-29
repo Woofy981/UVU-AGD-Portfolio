@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DmgGold
   m_EditorClassIdentifier: Assembly-CSharp::IntData
   value: -1
-  minValue: -1
+  minValue: 0
   maxValue: -2147483648
   valueOutOfRange:
     m_PersistentCalls:
@@ -31,5 +31,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onValueZero:
     m_PersistentCalls:
       m_Calls: []

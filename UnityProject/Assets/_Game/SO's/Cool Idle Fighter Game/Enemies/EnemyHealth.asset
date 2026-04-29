@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21667c5c1ee7a4111a1243f78270d1dd, type: 3}
   m_Name: EnemyHealth
   m_EditorClassIdentifier: Assembly-CSharp::FloatData
-  value: 0.9
+  value: 1
   minValue: 0.01
   maxValue: 1e+38
   valueOutOfRange:
