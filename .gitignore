@@ -24,3 +24,5 @@ UnityProject/Packages/packages-lock.json
 UnityProject/Recordings/
 
 *.uproject
+
+UnrealProject/
